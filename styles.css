@@ -1,0 +1,24 @@
+* { box-sizing: border-box; }
+body { margin:0; font-family: Arial, sans-serif; line-height:1.5; color:#222; background:#fafafa; }
+.container { max-width:1000px; margin:0 auto; padding:20px; }
+
+.site-header { background:#fff; border-bottom:1px solid #ddd; }
+.header-inner { display:flex; align-items:center; justify-content:space-between; padding:14px 20px; }
+.logo { font-weight:700; font-size:1.4rem; }
+.main-nav ul { display:flex; gap:20px; list-style:none; margin:0; padding:0; }
+.main-nav a { text-decoration:none; color:#333; font-weight:500; }
+
+.section { margin:40px 0; }
+.section h1, .section h2 { margin-bottom:16px; }
+
+.gallery-grid { display:grid; gap:12px; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); }
+.gallery-grid figure { margin:0; position:relative; overflow:hidden; border-radius:8px; box-shadow:0 1px 5px rgba(0,0,0,0.08); }
+.gallery-grid img { width:100%; height:250px; object-fit:cover; display:block; border-radius:8px; }
+.gallery-grid figcaption { position:absolute; left:0; right:0; bottom:0; padding:8px; color:#fff; background:rgba(0,0,0,0.5); opacity:0; transition:opacity .2s ease; }
+.gallery-grid figure:hover figcaption { opacity:1; }
+
+.contact-list { list-style:none; padding:0; }
+.contact-list li { margin-bottom:8px; }
+.contact-list a { color:#0077cc; text-decoration:none; }
+
+.site-footer { margin-top:40px; padding:20px; text-align:center; font-size:0.9rem; color:#666; background:#f0f0f0; }
